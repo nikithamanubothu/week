@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Selection</title>
+    <style>
+        .container {
+            display: none;
+            margin: 20px;
+            border: 1px solid #CADCFC;
+            padding: 20px;
+        }
+        .active {
+            display: block;
+        }
+        .item {
+            display: inline-block;
+            width: 150px;
+            margin: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="slide1" class="container active">
+        <h1>Sign In</h1>
+        <button onclick="showSlide(2)">Sign In</button>
+    </div>
+
+    <div id="slide2" class="container">
+        <h1>Select Category</h1>
+        <div class="item" onclick="showFood('fastfood')">
+            <h2>Fast Food</h2>
+            <img src="fastfood.jpg" alt="Fast Food" width="100">
+        </div>
+        <div class="item" onclick="showFood('veg')">
+            <h2>Veg</h2>
+            <img src="veg.jpg" alt="Veg" width="100">
+        </div>
+        <div class="item" onclick="showFood('nonveg')">
+            <h2>Non-Veg</h2>
+            <img src="nonveg.jpg" alt="Non-Veg" width="100">
+        </div>
+        <div class="item" onclick="showFood('cooldrink')">
+            <h2>Cool Drink</h2>
+            <img src="cooldrink.jpg" alt="Cool Drink" width="100">
+        </div>
+    </div>
+
+    <div id="fastfood" class="container">
+        <h1>Fast Food Options</h1>
+        <div class="item"><h2>Burger</h2><img src="burger.jpg" alt="Burger" width="100"></div>
+        <div class="item"><h2>Pizza</h2><img src="pizza.jpg" alt="Pizza" width="100"></div>
+        <div class="item"><h2>Fries</h2><img src="fries.jpg" alt="Fries" width="100"></div>
+        <div class="item"><h2>Hot Dog</h2><img src="hotdog.jpg" alt="Hot Dog" width="100"></div>
+        <div class="item"><h2>Sandwich</h2><img src="sandwich.jpg" alt="Sandwich" width="100"></div>
+    </div>
+
+    <div id="veg" class="container">
+        <h1>Veg Options</h1>
+        <div class="item"><h2>Salad</h2><img src="salad.jpg" alt="Salad" width="100"></div>
+        <div class="item"><h2>Paneer</h2><img src="paneer.jpg" alt="Paneer" width="100"></div>
+        <div class="item"><h2>Vegetable Curry</h2><img src="curry.jpg" alt="Vegetable Curry" width="100"></div>
+        <div class="item"><h2>Rice</h2><img src="rice.jpg" alt="Rice" width="100"></div>
+        <div class="item"><h2>Dal</h2><img src="dal.jpg" alt="Dal" width="100"></div>
+    </div>
+
+    <div id="nonveg" class="container">
+        <h1>Non-Veg Options</h1>
+        <div class="item"><h2>Chicken Curry</h2><img src="chickencurry.jpg" alt="Chicken Curry" width="100"></div>
+        <div class="item"><h2>Fish Fry</h2><img src="fishfry.jpg" alt="Fish Fry" width="100"></div>
+        <div class="item"><h2>Mutton Biryani</h2><img src="biryani.jpg" alt="Mutton Biryani" width="100"></div>
+        <div class="item"><h2>Egg Curry</h2><img src="egg.jpg" alt="Egg Curry" width="100"></div>
+        <div class="item"><h2>Chicken Tikka</h2><img src="tikka.jpg" alt="Chicken Tikka" width="100"></div>
+    </div>
+
+    <div id="cooldrink" class="container">
+        <h1>Cool Drink Options</h1>
+        <div class="item"><h2>Coke</h2><img src="coke.jpg" alt="Coke" width="100"></div>
+        <div class="item"><h2>Sprite</h2><img src="sprite.jpg" alt="Sprite" width="100"></div>
+        <div class="item"><h2>Fanta</h2><img src="fanta.jpg" alt="Fanta" width="100"></div>
+        <div class="item"><h2>Pepsi</h2><img src="pepsi.jpg" alt="Pepsi" width="100"></div>
+        <div class="item"><h2>7UP</h2><img src="7up.jpg" alt="7UP" width="100"></div>
+    </div>
+
+    <script>
+        function showSlide(slideNumber) {
+            const slides = document.querySelectorAll('.container');
+            slides.forEach(slide => slide.classList.remove('active'));
+            document.getElementById('slide' + slideNumber).classList.add('active');
+        }
+
+        function showFood(category) {
+            const slides = document.querySelectorAll('.container');
+            slides.forEach(slide => slide.classList.remove('active'));
+            document.getElementById(category).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

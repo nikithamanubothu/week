@@ -1,0 +1,159 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .menu li {
+    margin-left: 1.5rem;
+}
+
+.navbar .menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .menu a:hover {
+    color: #f0a500;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-image: url('jewelry-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.hero .hero-text {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    background-color: #f0a500;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background-color: #333;
+}
+
+/* About Section Styling */
+.about {
+    padding: 2rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Products Section Styling */
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 200px;
+    margin: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product span {
+    font-weight: bold;
+    color: #f0a500;
+}
+
+/* Contact Section Styling */
+.contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
